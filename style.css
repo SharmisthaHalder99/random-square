@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.circle {
+  display: block;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  position: absolute;
+  border: none;
+  background-color: teal;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.square-ele {
+  animation: falling-stars 2s linear;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: cadetblue;
+}
+@keyframes falling-stars {
+  from {
+    top: 0;
+  }
+  to {
+    top: 100vh;
+  }
+}
